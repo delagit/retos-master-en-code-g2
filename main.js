@@ -10,7 +10,8 @@ El constructor unicamente pide nombre, apellido, edad, sexo, peso y altura.
 
 NOTA: el ID se genera concatenando las primeras tres letras del nombre, la primeras tres letras del apellido, año de nacimiento y sexo.
 */
-class Persona {
+
+/* class Persona {
     constructor(nombre, apellido, edad, sexo, peso, altura){
         this.nombre = nombre;
         this.apellido = apellido;
@@ -35,7 +36,8 @@ class Persona {
     }
 }
 
-const persona1 = new Persona("Raissa","Lopez","27","F","65","1.6");
+const persona1 = new Persona("raissa","lopez","27","F","65","1.6"); */
+
 
 
 
@@ -54,4 +56,36 @@ Método get para contraseña y longitud.
 Método set para longitud.
 
  */
+
+class Password {
+    constructor(longitud){
+        this.longitud = longitud;
+        this.contraseña = "";
+    }
+    /* esFuerte(){ //2 mayusculas, 1 minuscula, mas de 5 numeros
+
+    } */
+    generarPassword(){
+        let pass = "";
+        const caracteres = "0123456789aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+        for (let i = 0; i < this.longitud; i++){
+            pass += caracteres.charAt(Math.floor(Math.random()*caracteres.length));
+        }
+        this.contraseña = pass;
+        return this.contraseña;
+    }
+    getContraseña(){
+        return this.contraseña;
+    }
+    getLongitud(){
+        return this.longitud;
+    }
+    setLongitud(newLongitud){
+        this.longitud = newLongitud;
+        return this.longitud;
+    }
+}
+
+const facebook = new Password(10);
+
 
