@@ -67,23 +67,16 @@ class Password {
     } */
     generarPassword(){
         let pass = "";
-        const caracteres = "0123456789aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+        const caracteres = "01234567890123456789aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
         for (let i = 0; i < this.longitud; i++){
             pass += caracteres.charAt(Math.floor(Math.random()*caracteres.length));
         }
         this.contraseña = pass;
         return this.contraseña;
     }
-    getContraseña(){
-        return this.contraseña;
-    }
-    getLongitud(){
-        return this.longitud;
-    }
-    setLongitud(newLongitud){
-        this.longitud = newLongitud;
-        return this.longitud;
-    }
+    get verContraseña(){return this.contraseña;}
+    get verLongitud(){return this.longitud;}
+    set nuevaLongitud(newLongitud){this.longitud = newLongitud; return this.longitud;}
 }
 
 const facebook = new Password(10);
