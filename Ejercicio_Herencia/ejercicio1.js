@@ -34,24 +34,3 @@ class Lavadora extends Electrodomestico{
 
 const Samsung = new Lavadora(500,"negro",50,200);
 console.log(Samsung);
-
-
-
-
-/* 2.- Crear una clase Bebida que herede a dos clases Cerveza
-    y Refresco. Ambas clases deben tener la propiedad
-    cantidad (ml). La clase Refresco debe tener el atributo
-    azucar(g) y la clase Cerveza debe el atributo
-    porcentajeAlcohol
-Crear los getters y setters correspondientes. */
-
-
-
-
-/* 3.- Hacer superclase Maestro y subclases Maestro de Física y
-    Maestro de Música y a cada uno asignarle su materia y
-    calcular su promedio de grupo a partir de calificaciones
-    (puedes usar arreglos). El maestro de física tiene un
-    atributo “antigüedad” que guarda un valor numérico,
-    mientras que el maestro de música tiene un atributo “edad”
-    también guardando un valor numérico. */
