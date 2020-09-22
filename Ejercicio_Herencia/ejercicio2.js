@@ -17,14 +17,14 @@ class Cerveza extends Bebida {
         super(mL);
         this.porcentajeAlcohol = porcentajeAlcohol;
     }
-    get verPorcentajeAlcohol(){
+    getverPorcentajeAlcohol(){
         return `El porcentaje de alcohol de esta bebida es ${this.porcentajeAlcohol}%`;
     }
     setcambiarPorcentajeAlcohol(nuevoPorcentajeAlcohol){
         this.porcentajeAlcohol = nuevoPorcentajeAlcohol;
         return `El porcentaje de alcohol de esta bebida es ${this.porcentajeAlcohol}%`;
     }
-    get verML(){
+    getverML(){
         return `La capacidad del envase de la bebida es de ${this.mL}mL`;
     }
     setnuevoML(nuevoML){
@@ -45,14 +45,14 @@ class Refresco extends Bebida{
         super(mL);
         this.azucar = azucar;
     }
-    get verML(){
+    getverML(){
         return `La capacidad del envase de la bebida es de ${this.mL}mL`;
     }
     setcambiarML(nuevoML){
         this.mL = nuevoML;
         return `La capacidad del envase de la bebida es de ${this.mL}mL`;
     }
-    get verAzucar(){
+    getverAzucar(){
         return `La cantidad de azucar en esta bebida es de ${this.azucar} gramos`;
     }
     setcambiarAzucar(nuevoAzucar){
