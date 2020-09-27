@@ -57,7 +57,7 @@ class ListaEnlazada {
     //Se crea un nuevo nodo con el objeto a agregar
     const nodo = new Nodo(dato);
 
-    if(this.head === null || index > this.length){
+    if(this.head === null || posicion > this.length){
       return `La posicion ingresada no es valida para agregar el dato`;
     } else {
       let contador = 1;
@@ -66,7 +66,7 @@ class ListaEnlazada {
         contador++;
         nodoActual = nodoActual.next;
       }
-      
+      nodoActual.dato = dato;
     }
   }
 
@@ -109,3 +109,8 @@ const listaDeCompras = new ListaEnlazada();
 
 listaDeCompras.agregarAlInicio("Leche");
 listaDeCompras.agregarAlFinal("Huevos");
+listaDeCompras.agregarAlFinal("Frijol");
+listaDeCompras.agregarAlFinal("Arroz");
+
+listaDeCompras.agregarEnPosicion("Tomates", 3);
+console.log(listaDeCompras);
