@@ -39,7 +39,6 @@ function agregar(){
     let elemento = document.getElementById("agregarCola").value;
     //Se ejecuta el metodo encolar de nuesta clase
     filaDeAsesorias.encolar(elemento);
-    console.log(filaDeAsesorias);
 
     if(filaDeAsesorias.tamaño() === 1){
         //Se obtiene el div dentro del cual vamos a insertar el contenido de la cola
@@ -47,6 +46,7 @@ function agregar(){
         //Se crea un div que contendra cada contenedor del elemento
         var grilla = document.createElement("div");
         grilla.className = "grilla"
+        grilla.id = filaDeAsesorias.coleccion.length;
         //Se crea el div de tipo alert que contendra al elemento
         var alert = document.createElement("div");
         alert.className = "alert alert-danger mx-auto";
@@ -62,6 +62,7 @@ function agregar(){
         //Se crea un div que contendra cada contenedor del elemento
         var grilla = document.createElement("div");
         grilla.className = "grilla"
+        grilla.id = filaDeAsesorias.coleccion.length;
         //Se crea el div de tipo alert que contendra al elemento
         var alert = document.createElement("div");
         alert.className = "alert alert-info mx-auto";
@@ -70,5 +71,14 @@ function agregar(){
         //Se inserta la grilla en el inicio del grid
         grid.appendChild(grilla);
         grilla.appendChild(alert);
+    }
+}
+
+function quitar(){
+    if(filaDeAsesorias.tamaño() === 0){
+        null;
+    }else if(filaDeAsesorias.tamaño() > 0){
+        document.getElementById(filaDeAsesorias.tamaño()).remove();
+        filaDeAsesorias.desencolar();
     }
 }
