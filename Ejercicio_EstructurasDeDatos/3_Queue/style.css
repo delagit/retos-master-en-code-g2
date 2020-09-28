@@ -28,6 +28,9 @@ body{
 /* SECCION NAVBAR */
 
 /* HERO IZQUIERDA*/
+.hero {
+  margin-top: 100px;
+}
 .titulo{
   font-weight: bolder;
   font-size: 4em;
@@ -47,7 +50,7 @@ body{
 
 /* CARACTERISTICAS */
 .contenedormayor{
-  height: 600px;
+  height: 500px;
 }
 .card{
   border-radius: 10px;
@@ -57,3 +60,15 @@ body{
   color: #125857;
 }
 /* CARACTERISTICAS */
+
+/* APP */
+.app{
+  height: 500px;
+}
+.alert{
+  max-width: 300px;
+}
+.grilla{
+  height: 50px;
+}
+/* APP */

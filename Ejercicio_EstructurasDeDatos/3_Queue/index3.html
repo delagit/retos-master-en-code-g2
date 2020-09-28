@@ -10,7 +10,7 @@
 </head>
 <body>
   <!-- INICIO DEL NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbarCSS">
+  <nav class="navbar navbar-expand-lg navbarCSS fixed-top">
     <span class="logoName ml-4" href="#">ASESORIAS</span>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto fontNavbar">
@@ -33,8 +33,8 @@
   <!-- FINAL DEL NAVBAR -->
 
   <!-- INICIO DEL HERO -->
-  <div class="container mt-5">
-    <div class="row align-items-center">
+  <div class="container mt-5 ">
+    <div class="row align-items-center hero">
       <div class="col-sm izquierda">
         <h1 class="titulo">Mas que solo asesorías</h1>
         <h3 class="subtitulo text-justify">Un proyecto de apoyo al estudiante en el que podrás aprender junto a expertos del desarrollo web.</h3>
@@ -80,6 +80,54 @@
     </div>
   </div>
   <!-- FINAL CARACTERISTICAS -->
+
+<!-- INICIO DE LA APP -->
+<div class="container mt-5">
+  <div class="row row-cols-2 app">
+    <div class="col-sm formulario">
+      <div class="row align-self-center">
+        <div class="card mx-auto border-info mb-3">
+          <div class="card-body text-info">
+            <h5 class="card-title">Registrate para una asesoría</h5>
+            <div class="form-group">
+              <label for="agregarCola">Ingresa tu nombre:</label>
+              <input type="text" class="form-control" id="agregarCola">
+            </div>
+            <button onclick="agregar();" type="submit" class="btn btn-primary">Agregar</button>
+          </div>
+        </div>
+      </div>
+      <div class="row align-self-center">
+        <div class="card mx-auto border-info mb-3">
+          <div class="card-body text-info">
+            <h5 class="card-title">Finalizar la asesoría actual</h5>
+            <button onclick="quitar();" type="submit" class="btn btn-info">Agregar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm " id="listado">
+      <!-- Aqui va la lista de la cola -->
+      <!-- 
+      <div class="alert alert-danger mx-auto" role="alert">
+        <span class="badge badge-danger">#1</span>
+        Jorge
+      </div>
+
+      <div class="alert alert-info mx-auto" role="alert">
+        <span class="badge badge-info">#2</span>
+        José
+      </div> -->
+      <!-- Aqui termina la lista de la -->
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- FINAL DE LA APP -->
+
+
 
   <script src="Ejercicio3_queue.js"></script>
 </body>
