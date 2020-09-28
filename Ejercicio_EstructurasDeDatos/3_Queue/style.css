@@ -44,3 +44,16 @@ body{
   height: 400px;
 }
 /* HERO DERECHA */
+
+/* CARACTERISTICAS */
+.contenedormayor{
+  height: 600px;
+}
+.card{
+  border-radius: 10px;
+  border: #3f3d56 1px solid;
+}
+.card-title{
+  color: #125857;
+}
+/* CARACTERISTICAS */
