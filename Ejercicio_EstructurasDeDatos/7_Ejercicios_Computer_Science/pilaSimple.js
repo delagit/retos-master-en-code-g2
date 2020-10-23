@@ -5,3 +5,4 @@ Entrada : mifuncion([‘Manzana’,‘Cebolla’,‘Apio’,‘Naranja’,‘Pap
 
 Salida: [‘Manzana’,‘Cebolla’,‘Apio’,‘Naranja’]
  */
+
